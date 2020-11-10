@@ -16,6 +16,11 @@ const questions = [
         message: 'Please enter your Github username.'
     },
     {
+        name: 'repo',
+        type: 'input',
+        message: 'Please enter the name of your Github repo.',
+    },
+    {
         name: 'title',
         type: 'input',
         message: 'Please enter the Title for your project.',
@@ -87,7 +92,7 @@ async function init() {
         console.log(markdown);
 
         // write it to file
-        await aysncWriteFile('README.md', markdown);
+        await aysncWriteFile('exREADME.md', markdown);
 
     }
     catch(err) {
