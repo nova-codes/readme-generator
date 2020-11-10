@@ -37,7 +37,7 @@ const questions = [
         message: 'Please enter the usage information for your project.'
     },
     {
-        name: 'contribution',
+        name: 'contributing',
         type: 'input',
         message: 'Please enter the contribution guidelines for your project.'
     },
