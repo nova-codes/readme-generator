@@ -11,8 +11,8 @@
   ## Installation
   In your preferred terminal, you will need to run `npm install` in order to install the following package dependencies as specified in the package.json file.
 
-    * [inquirer](https://www.npmjs.com/package/inquirer) - this will prompt the user for input from the terminal or command line.
-    * [axios](https://www.npmjs.com/package/axios) to fetch user information from the Github API.
+  * [inquirer](https://www.npmjs.com/package/inquirer) - this will prompt the user for input from the terminal or command line.
+  * [axios](https://www.npmjs.com/package/axios) to fetch user information from the Github API.
 
   Once the packages above are installed, the application can be run with the command:
 
