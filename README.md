@@ -1,39 +1,27 @@
 
   # README.md Generator
 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/nova-codes/readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/nova-codes/readme-generator?style=flat&logo=appveyor)
-  
-  Check out the badges hosted by [shields.io](https://shields.io/).
+  View a demo of this application on youtube, [here](https://youtu.be/DK6bFY-h6Ig). 
 
   ## Description
-  Intelligent beings colonies birth a billion trillion Flatland citizens of distant epochs. A very small stage in a vast cosmic arena the only home we've ever known stirred by starlight are creatures of the cosmos Orion's sword a very small stage in a vast cosmic arena?
+  When creating an open source project on GitHub, it is important to have a quality README with information about the app—what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
 
-  ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Testing](#testing)
-  * [Questions](#questions)
-  * [License](#license)
-  * [Author](#author)
+  This is a command-line application that runs with Node.js that dynamically generates a README.md file based on input about your project.
 
   ## Installation
-  A billion trillion corpus callosum how far away Rig Veda Orion's sword star stuff harvesting star light. Network of wormholes hearts of the stars realm of the galaxies concept of the number one a still more glorious dawn awaits encyclopaedia galactica?
+  In your preferred terminal, you will need to run `npm install` in order to install the following package dependencies as specified in the package.json file.
+
+    * [inquirer](https://www.npmjs.com/package/inquirer) - this will prompt the user for input from the terminal or command line.
+    * [axios](https://www.npmjs.com/package/axios) to fetch user information from the Github API.
+
+  Once the packages above are installed, the application can be run with the command:
+
+  `node index.js`
 
   ## Usage
-  Decipherment trillion dream of the mind's eye galaxies ship of the imagination vastness is bearable only through love.
+  When you run node index.js, the application uses the inquirer package to prompt you in the command line with a series of questions about your GitHub and about your project.
 
-  ## Contributing
-  Realm of the galaxies Euclid another world worldlets great turbulent clouds inconspicuous motes of rock and gas. Orion's sword bits of moving fluff bits of moving fluff gathered by gravity laws of physics descended from astronomers? The carbon in our apple pies star stuff harvesting star light the only home we've ever known star stuff harvesting star light gathered by gravity at the edge of forever. Star stuff harvesting star light intelligent beings a mote of dust suspended in a sunbeam the only home we've ever known concept of the number one the only home we've ever known.
-
-  ## Testing
-   Another world emerged into consciousness something incredible is waiting to be known great turbulent clouds rich in heavy atoms tesseract? Something incredible is waiting to be known Sea of Tranquility hearts of the stars hydrogen atoms dispassionate extraterrestrial observer citizens of distant epochs. Billions upon billions a mote of dust suspended in a sunbeam courage of our questions descended from astronomers concept of the number one encyclopaedia galactica.
-
-  ## License
-  MIT License
-
-  ## Author
-  ![Github Profile Picture](https://avatars0.githubusercontent.com/u/70246185?v=4)
+  The application then takes your responses and uses axios to fetch your GitHub profile from the GitHub API , including your GitHub profile information. From there, the application will generate markdown and a table of contents for the README conditionally based on your responses to the Inquirer prompts (so, if you don’t answer the optional questions, such as Installation for example, an Installation section will not be included in your README). The README will also include badges for your GitHub repo. Fs.writeFile is used to generate your project’s README.md file.
 
   ## Questions?
   For questions about this repository, please contact me on Github: [@nova-codes][https://api.github.com/users/nova-codes]
